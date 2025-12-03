@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Донецк — Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header" role="banner">
+        <div class="branding">
+            <a class="logo" href="index.html" aria-label="На главную">Донецк</a>
+        </div>
+        <nav class="site-nav" aria-label="Основная навигация">
+            <ul>
+                <li><a href="index.html" aria-current="page">Главная</a></li>
+                <li><a href="about.html">О разработчике</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="infrastructure.html">Инфраструктура</a></li>
+                <li><a href="culture.html">Культура</a></li>
+                <li><a href="contact.html">Связаться</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="container" role="main">
+        <section class="hero" aria-label="Общее описание">
+            <div class="hero__content">
+                <h1>Донецк — сердце промышленного региона</h1>
+                <p><mark>Краткое описание</mark> города: экономический и культурный центр региона.</p>
+                <p><time datetime="2025-09-25">25 сентября 2025</time></p>
+                <div class="hero__meters">
+                    <label>Развитие инфраструктуры
+                        <meter min="0" max="100" value="75" optimum="85">75%</meter>
+                    </label>
+                    <label>Туристическая привлекательность
+                        <progress max="100" value="40">40%</progress>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" aria-label="Фотогалерея города">
+            <h2>Фотографии</h2>
+            <div class="gallery__grid">
+                <figure>
+                    <img src="Фотки/площадь ленина.jpg" alt="Площадь Ленина">
+                    <figcaption>Площадь Ленина</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Парк.jpeg" alt="Парк">
+                    <figcaption>Парк</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Набережная.jpg" alt="Набережная">
+                    <figcaption>Набережная</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Театр.JPG" alt="Театр">
+                    <figcaption>Театр</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Золотое кольцо.jpg" alt="Золотое кольцо">
+                    <figcaption>Золотое кольцо</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Парк кованых фигур.jpg" alt="Парк кованых фигур">
+                    <figcaption>Парк кованых фигур</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Цирк космос.jpg" alt="Цирк Космос">
+                    <figcaption>Цирк «Космос»</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Площадь свободы.jpg" alt="Площадь Свободы">
+                    <figcaption>Площадь Свободы</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Донбасс Арена.jpg" alt="Донбасс Арена">
+                    <figcaption>Донбасс Арена</figcaption>
+                </figure>
+                <figure>
+                    <img src="Фотки/Освободители Донбасса.jpg" alt="Монумент Освободители Донбасса">
+                    <figcaption>Монумент «Освободители Донбасса»</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="news" aria-label="Актуальные события">
+            <h2>События</h2>
+            <article class="news-item">
+                <header>
+                    <h3><a href="#" rel="bookmark">Городской фестиваль</a></h3>
+                    <p><time datetime="2025-09-10">10.09.2025</time></p>
+                </header>
+                <p>Ежегодный фестиваль культуры, музыки и спорта.</p>
+                <aside>Место проведения: центральный парк</aside>
+                <details>
+                    <summary>Подробнее</summary>
+                    <p>Программа включает выставки, выступления и мастер‑классы.</p>
+                </details>
+            </article>
+        </section>
+
+        
+
+        
+
+        <aside class="note" aria-label="Примечание">
+            <p>Это учебный сайт. Данные могут быть условными.</p>
+        </aside>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; <span id="year"></span> Донецк — учебный проект. <a href="about.html">О разработчике</a></p>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Вверх">↑</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

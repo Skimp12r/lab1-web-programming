@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Инфраструктура</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="branding"><a class="logo" href="index.html">Донецк</a></div>
+        <nav class="site-nav" aria-label="Навигация"><ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О разработчике</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="infrastructure.html" aria-current="page">Инфраструктура</a></li>
+            <li><a href="culture.html">Культура</a></li>
+            <li><a href="contact.html">Связаться</a></li>
+        </ul></nav>
+    </header>
+
+    <main class="container">
+        <h1>Инфраструктура города</h1>
+        <section>
+            <h2>Географическое положение</h2>
+            <p>Город расположен в степной зоне, удобные транспортные связи.</p>
+        </section>
+
+        <section>
+            <h2>Карта</h2>
+            <div style="position:relative;padding-top:56.25%;">
+                <iframe title="Карта Донецка" src="https://yandex.ru/map-widget/v1/?ll=37.802%2C48.015&z=12&lang=ru_RU" style="position:absolute;inset:0;border:0;width:100%;height:100%;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Административное деление</h2>
+            <ul>
+                <li>Центральные районы</li>
+                <li>Промышленные районы</li>
+                <li>Пригородные территории</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Общественный транспорт</h2>
+            <article>
+                <h3>Автобусы и троллейбусы</h3>
+                <p>Маршруты соединяют ключевые районы города.</p>
+            </article>
+            <article>
+                <h3>Такси и пригородные направления</h3>
+                <p>Доступны службы такси и междугородние рейсы.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer"><p>&copy; <span id="year"></span></p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

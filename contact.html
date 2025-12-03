@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Связаться</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="branding"><a class="logo" href="index.html">Донецк</a></div>
+        <nav class="site-nav" aria-label="Навигация"><ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О разработчике</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="infrastructure.html">Инфраструктура</a></li>
+            <li><a href="culture.html">Культура</a></li>
+            <li><a href="contact.html" aria-current="page">Связаться</a></li>
+        </ul></nav>
+    </header>
+
+    <main class="container">
+        <h1>Форма обратной связи</h1>
+        <form action="#" method="post" novalidate>
+            <fieldset>
+                <legend>Ваши данные</legend>
+                <label>Имя
+                    <input type="text" name="name" placeholder="Иван" required minlength="2" maxlength="50">
+                </label>
+                <label>Email
+                    <input type="email" name="email" placeholder="name@example.com" required>
+                </label>
+                <label>Телефон
+                    <input type="tel" name="tel" pattern="\+?\d{10,15}" title="10–15 цифр, можно с +">
+                </label>
+                <label>Ваш регион
+                    <select name="region" required>
+                        <option value="" selected disabled>Выберите регион</option>
+                        <option>Донецк</option>
+                        <option>Макеевка</option>
+                        <option>Горловка</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Сообщение</legend>
+                <label>Тема
+                    <input type="text" name="subject" pattern="[A-Za-zА-Яа-я0-9 ,.!?-]{3,60}" title="3–60 символов, буквы/цифры и ,.!?-">
+                </label>
+                <label>Текст сообщения
+                    <textarea name="message" rows="6" required maxlength="500" oninput="this.nextElementSibling.value=this.value.length + '/500' "></textarea>
+                    <output>0/500</output>
+                </label>
+                <label>Номер заявки (выдаётся системой)
+                    <input type="text" value="AUTO-0001" disabled>
+                </label>
+            </fieldset>
+            <p>
+                <label><input type="checkbox" required> Согласен с обработкой данных</label>
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <footer class="site-footer"><p>&copy; <span id="year"></span></p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

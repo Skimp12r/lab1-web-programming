@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>South Park — Simple Layout</title>
+  <style>
+    body {
+      background: #87CEEB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .south-park { display: flex; gap: 30px; }
+
+    /* Базовые стили персонажей */
+    .character { display: flex; flex-direction: column; align-items: center; }
+    .head { position: relative; }
+
+    .face {
+      width: 70px; height: 70px; background: #fce2c4; border: 3px solid black;
+      border-radius: 50%; position: relative; z-index: 1;
+    }
+
+    .body { width: 80px; height: 90px; border: 3px solid black; border-radius: 20px; }
+
+    /* Картман */
+    .cartman .hat {
+      width: 80px; height: 40px; background: #00a8f3; border: 3px solid black;
+      border-bottom: none; border-radius: 40px 40px 0 0; position: absolute; top: -10px; left: -5px;
+    }
+
+    /* Кайл */
+    .kyle .hat {
+      width: 90px; height: 35px; background: #2ecc71; border: 3px solid black; border-radius: 5px;
+      position: absolute; top: -5px; left: -10px;
+    }
+
+    /* Стэн */
+    .stan .hat {
+      width: 80px; height: 40px; background: #1e6bf1; border: 3px solid black; border-bottom: none;
+      border-radius: 40px 40px 0 0; position: absolute; top: -10px; left: -5px;
+    }
+    .stan .pom-pom {
+      width: 16px; height: 16px; background: #b00020; border: 2px solid black; border-radius: 50%;
+      position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 2;
+    }
+
+    /* Кенни */
+    .kenny .hood {
+      width: 80px; height: 80px; background: #ff7300; border: 3px solid black; border-radius: 50%;
+      position: absolute; top: -5px; left: -5px;
+    }
+
+    .cartman .body { background: #b22222; }
+    .kyle .body { background: #ff6600; }
+    .stan .body { background: #8b4513; }
+    .kenny .body { background: #ff6600; }
+  </style>
+</head>
+<body>
+  <div class="south-park">
+    <!-- Картман -->
+    <div class="character cartman">
+      <div class="head">
+        <div class="hat"></div>
+        <div class="face"></div>
+      </div>
+      <div class="body"></div>
+    </div>
+
+    <!-- Кайл -->
+    <div class="character kyle">
+      <div class="head">
+        <div class="hat"></div>
+        <div class="face"></div>
+      </div>
+      <div class="body"></div>
+    </div>
+
+    <!-- Стэн -->
+    <div class="character stan">
+      <div class="head">
+        <div class="hat"><div class="pom-pom"></div></div>
+        <div class="face"></div>
+      </div>
+      <div class="body"></div>
+    </div>
+
+    <!-- Кенни -->
+    <div class="character kenny">
+      <div class="head">
+        <div class="hood"></div>
+        <div class="face"></div>
+      </div>
+      <div class="body"></div>
+    </div>
+  </div>
+</body>
+</html>
+
